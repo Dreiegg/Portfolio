@@ -14,4 +14,6 @@ I've worked with languages like C#, Python and C++ and tools like Unity, Git and
 
 About Me - Art Gallery
 
+I've started my proffessional journey when i decided to go to a technical college with focus on fine arts and historical restauration in innsbruck. My education has brought me many oportunities to showcase my anologous art and try out many techniques. However I have now mostly turned my attention towards digital art, since most of my inspirations come from videogames. 
 
+Those inspirations have also brought me to my current chapter in life - studying game devlopment at FH Salzburg. Although my current studies are based in computer science, I am still working on many projects on the side, mainly focusing on game art and everything there is to it such as digital Illustration, Concept art, 2D animation, and much more. The projects to the right are a selection of projects that showcase my current skills and interests.

@@ -28,6 +28,7 @@ p {
 .strong
 {
   color: whitesmoke !important;
+  font-weight: bold;
 }
 
 html {

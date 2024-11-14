@@ -27,7 +27,7 @@ p {
 
 .strong
 {
-  color: whitesmoke;
+  color: whitesmoke !important;
 }
 
 html {

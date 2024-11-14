@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 html, body {
-  min-height: 100vh;                  /* Ensures full height of the viewport */
+  min-height: 100vh;     
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -23,6 +23,11 @@ body {
 
 p {
   line-height: 1.6;
+}
+
+strong
+{
+  color: whitesmoke;
 }
 
 html {
@@ -69,14 +74,14 @@ a:hover {
   height: auto;
   vertical-align: middle;
   margin-right: 5px;
-  transition: transform 0.3s ease; /* Add smooth transition */
+  transition: transform 0.3s ease; 
   margin-bottom: 5px;
 }
 
 .top-bar a:hover .arrow-icon {
   transform: rotate(
     -90deg
-  ); /* Rotate 45 degrees to the left when hovering over the entire link */
+  ); 
 }
 
 .top-bar a {
@@ -139,32 +144,10 @@ a:hover {
   background-color: red;
 } */
 
-/* Style for normal text (no gradient) */
 .no-gradient {
   color: inherit; /* Make text color inherit so it can be visible */
   background: none; /* Remove any background */
 }
-
-/* Style the "Read More" button */
-/* .read-more-btn {
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    display: inline-block;
-    padding: 5px 15px;
-    border: 2px solid transparent;
-    background-color: #007ba8;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.3s;
-}
-
-.read-more-btn:hover {
-    color: rgb(255, 255, 255);
-    background-color: #5baac7;
-} */
 
 .read-more-btn {
   color: rgb(172, 191, 196);
@@ -240,14 +223,14 @@ a:hover {
 }
 
 .gradient-bar {
-    position: absolute; /* Position it above everything, fixed to the viewport */
-    top: 75vh;          /* Aligns with the top of the viewport */
+    position: absolute; 
+    top: 75vh;
     left: 0;
-  width: 100vw; /* Spans the full viewport width */
-  height: 300px; /* Adjust as desired for gradient height */
+  width: 100vw; 
+  height: 300px; 
   background: linear-gradient(to top, #141416 20%, transparent 100%);
-  z-index: 1000; /* Ensure it's above most elements */
-  pointer-events: none; /* Optional: Prevent it from intercepting clicks */
+  z-index: 1000;
+  pointer-events: none; 
 }
 
 
@@ -574,13 +557,13 @@ h2 {
 }
 
 footer {
-  background-color: #000;       /* Black background */
-  color: rgb(172, 191, 196);                  /* White text */
+  background-color: #000;     
+  color: rgb(172, 191, 196);         
   margin-top: 100px;
-  padding: 40px 0;              /* Padding for some space */
-  text-align: center;           /* Centered text */
-  font-size: 0.9em;             /* Slightly smaller font */
-  position: relative;           /* Allows sticking to the bottom */
+  padding: 40px 0;          
+  text-align: center;  
+  font-size: 0.9em;       
+  position: relative;  
   width: 100%;
   bottom: 0;
 }
@@ -589,12 +572,12 @@ footer {
   #image-center,
   #image-center-L,
   #image-center-R {
-    display: none; /* Hide all center images */
+    display: none; 
   }
 
   /* Ensure main content background remains */
   .main-content {
-    background-image: url("images/bg_img.webp"); /* Set path if needed */
+    background-image: url("images/bg_img.webp"); 
     background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
@@ -602,17 +585,17 @@ footer {
 
   /* Adjust top bar text size */
   .top-bar {
-    font-size: 12px; /* Set a smaller font size */
-    padding: 8px 15px; /* Adjust padding for smaller screens */
+    font-size: 12px; 
+    padding: 8px 15px;
   }
 
   .top-bar a {
-    font-size: 12px; /* Adjust link font size as well */
+    font-size: 12px; 
   }
   /* Stack the text and image gallery fields vertically */
   .content-area {
-    flex-direction: column; /* Change layout direction to vertical */
-    align-items: flex-start; /* Align items to the start for better spacing */
+    flex-direction: column; 
+    align-items: flex-start; 
   }
   .text-field {
     width: 100%;
@@ -620,9 +603,9 @@ footer {
 
   /* Adjust the img-gallery-field to be full-width for a better layout on small screens */
   .img-gallery-field {
-    width: 100%; /* Full width below text field */
-    margin-top: 20px; /* Space between text and image gallery */
-    justify-content: center; /* Center images within the gallery */
+    width: 100%; 
+    margin-top: 20px; 
+    justify-content: center; 
   }
   .img-gallery-field img {
     width: 100%;
@@ -631,11 +614,11 @@ footer {
   }
   /* Ensure the project blocks are displayed below the text field */
   .project-gallery {
-    width: 100%; /* Take full width */
+    width: 100%; 
     display: flex;
-    flex-direction: column; /* Stack project blocks vertically */
-    gap: 20px; /* Space between project blocks */
-    align-items: center; /* Center project blocks */
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; 
   }
 
   .text-field

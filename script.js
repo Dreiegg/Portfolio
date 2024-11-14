@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
             centerImages.right.style.opacity = 0;
         });
     } else {
-        console.error('Hover effect elements not found');
+        console.error('Hover effect elements not found; Only expected on index');
     }
 
     // "Read More" Toggle Functionality

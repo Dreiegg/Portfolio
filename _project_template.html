@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red and Woof</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Top bar -->
+      <div class="top-bar">
+        <div class="nav-links">
+        <a href="index.html">
+          <img src="images/triangle.svg" alt="Home Icon" class="arrow-icon" />
+          Antonia Pecha
+        </a>
+        <div class="search-bar">
+          <!-- <div class="search-placeholder">Search...</div> Placeholder for search bar -->
+        </div>
+          <a href="#about-me">About Me</a>
+          <a href="c_gallery.html">Coding Projects</a>
+          <a href="a_gallery.html">Art Projects</a>
+          <a href="#contact">Contact</a>
+          <a class="cv-button" href="cv.pdf" target="_blank">Download CV</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-area">
+        <div class="text-field">
+            <h1>#</h1>
+            <h2 class="h2-purple">#</h2>
+            <p>#</p>
+            <div class="text-container">
+                <h2>#</h2>
+                <p class="gradient-text">#</p>
+                
+                <p id="more-text-1" style="display: none;">#</p>
+                <span class="read-more-btn" data-target="more-text-1">Read More</span>
+            
+                <h2>#</h2>
+                <p class="gradient-text">#</p>
+                
+                <p id="more-text-2" style="display: none;">#</p>
+                <span class="read-more-btn" data-target="more-text-2">Read More</span>
+            </div>
+            <p> You can download *#* from <a href="#">#</a>.</p>
+        </div>
+        <div class="img-gallery-field">
+            <video controls preload="none" loop class="gallery-video">
+                <source src="#" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img src="#" alt="Image 0" class="gallery-img" data-index="0">
+            <img src="#" alt="Image 1" class="gallery-img" data-index="1">
+            <img src="#" alt="Image 2" class="gallery-img" data-index="2">
+            <img src="#" alt="Image 3" class="gallery-img" data-index="3">
+            <img src="#" alt="Image 4" class="gallery-img" data-index="4">
+            <img src="#" alt="Image 5" class="gallery-img" data-index="5">
+            <img src="#" alt="Image 6" class="gallery-img" data-index="6">
+            <img src="#" alt="Image 7" class="gallery-img" data-index="7">
+        </div>
+        
+        <!-- Modal structure for displaying clicked image -->
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-image">
+            <!-- <div class="modal-caption" id="modal-caption"></div> -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+    </div>
+    
+    <!-- Footer placed inside the body tag -->
+    <footer>
+      <p>&copy; <span id="current-year"></span> | Antonia Pecha</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

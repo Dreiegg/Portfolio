@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red and Woof</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Top bar -->
+      <div class="top-bar">
+        <div class="nav-links">
+        <a href="index.html">
+          <img src="images/triangle.svg" alt="Home Icon" class="arrow-icon" />
+          Antonia Pecha
+        </a>
+        <div class="search-bar">
+          <!-- <div class="search-placeholder">Search...</div> Placeholder for search bar -->
+        </div>
+          <a href="#about-me">About Me</a>
+          <a href="c_gallery.html">Coding Projects</a>
+          <a href="a_gallery.html">Art Projects</a>
+          <a href="#contact">Contact</a>
+          <a class="cv-button" href="cv.pdf" target="_blank">Download CV</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-area">
+        <div class="text-field">
+            <h1>Red and Woof</h1>
+            <h2 class="h2-purple">Development</h2>
+            <p>
+                Red and Woof is a local multiplayer puzzle platformer for 2 players on a single keyboard. Players, Red Riding Hood and the Wolf, work together to find keys in the game to unlock doors and progress, all the while avoiding being caught by the approaching Grandma.             </p>
+            <div class="text-container">
+                <h2>The Coding Part</h2>
+                <p class="gradient-text">
+                    For my final project in the second semester, I created a basic game engine using the SFML-C# library.
+                    Buzzwords aside, this game was a solo effort - I designed and programmed everything myself, with the exception of the fantastic music, which was provided by MP Robot.
+                </p>
+                
+                <p id="more-text-1" style="display: none;">
+                    While developing my own engine was an enjoyable challenge, I later decided to port the game to Unity to familiarise myself with a multi-purpose engine. This also allowed me to create a code structure that could easily support additional levels and expansions.
+                    <br><br>
+                    As this was my first large coding project, I'm a bit hesitant to share my less-than-perfect codebase. However, for those interested, the source files of the original project are available in the <a href="https://dreiegg.itch.io/red-and-woof">itch.io</a> download.
+                </p>
+                <span class="read-more-btn" data-target="more-text-1">Read More</span>
+            
+                <h2>The Design Part</h2>
+                <p class="gradient-text">
+                    For this storybook-inspired setting, I aimed for a hand-drawn, pencil-style aesthetic that would convey a cute yet slightly spooky atmosphere.
+                </p>
+                
+                <p id="more-text-2" style="display: none;">
+                    Designing the tileset took several iterations. As I usually work in colour, adapting to a black and grey palette was a challenge in terms of legibility.
+                    While I'm not entirely happy with the final result, I was able to improve the clarity considerably and gain a deeper appreciation for the balance between style and functionality.                   
+                </p>
+                <span class="read-more-btn" data-target="more-text-2">Read More</span>
+
+            </div>
+            <p> You can download *Red and Woof* from <a href="https://dreiegg.itch.io/red-and-woof">itch.io</a>.</p>
+            
+    </div>
+    <div class="img-gallery-field">
+        <video controls loop class="gallery-video">
+            <source src="images/RedAndWoof/RedAndWoofVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img src="images/RedAndWoof/Hero_image.png" alt="Image 0" class="gallery-img" data-index="0">
+        <img src="images/RedAndWoof/pause.png" alt="Image 1" class="gallery-img" data-index="1">
+        <img src="images/RedAndWoof/Screenshot 2024-11-07 230606.png" alt="Image 2" class="gallery-img" data-index="2">
+        <img src="images/RedAndWoof/Credits.png" alt="Image 3" class="gallery-img" data-index="3">
+        <img src="images/RedAndWoof/KeyCollisionRed.png" alt="Image 4" class="gallery-img" data-index="4">
+        <img src="images/RedAndWoof/KeyCollisionWolf.png" alt="Image 5" class="gallery-img" data-index="5">
+        <img src="images/RedAndWoof/Tileset.png" alt="Image 6" class="gallery-img" data-index="6">
+        <img src="images/RedAndWoof/Untitled_Artwork.png" alt="Image 7" class="gallery-img" data-index="7">
+    </div>
+    
+    <!-- Modal structure for displaying clicked image -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <!-- <div class="modal-caption" id="modal-caption"></div> -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+    </div>
+    <!-- Footer placed inside the body tag -->
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Antonia Pecha</p>
+      </footer>
+  
+      <!-- JavaScript -->
+      <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+      </script>
+</body>
+</html>

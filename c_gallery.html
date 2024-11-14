@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Projects Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Top bar -->
+      <div class="top-bar">
+        <div class="nav-links">
+        <a href="index.html">
+          <img src="images/triangle.svg" alt="Home Icon" class="arrow-icon" />
+          Antonia Pecha
+        </a>
+        <div class="search-bar">
+          <!-- <div class="search-placeholder">Search...</div> Placeholder for search bar -->
+        </div>
+          <a href="#about-me">About Me</a>
+          <a href="c_gallery.html">Coding Projects</a>
+          <a href="a_gallery.html">Art Projects</a>
+          <a href="#contact">Contact</a>
+          <a class="cv-button" href="cv.pdf" target="_blank">Download CV</a>
+        </div>
+      </div>
+    </div>
+
+        <!-- Placeholder for the sidebar -->
+        <!-- <div id="sidebar-placeholder"></div> -->
+        <div class="content-area">
+            <div class="text-field">
+                <h1>My Development Journey</h1>
+                <p>
+                    Something about having started with no experience and being on my learning journey...
+                </p>
+
+                
+                
+            </div>
+            <div class="project-gallery">
+                <a href="redandwoof.html" class="project-block purple-outline">
+                    <img src="images/RedAndWoofHero.png" alt="Red And Woof">
+                    <div class="project-content">
+                        <h1>Red And Woof</h1>
+                        <h3>Full Creative Direction and Development</h2>
+                    </div>
+                </a>
+                <a href="portfolio_website.html" class="project-block blue-outline">
+                    <img src="images/Portfolio_Website/Screenshot 2024-11-08 123735.png" alt="Portfolio">
+                    <div class="project-content">
+                        <h1>This Portfolio Website</h1>
+                        <h3>Web Development</h2>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- Footer placed inside the body tag -->
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Antonia Pecha</p>
+      </footer>
+  
+      <!-- JavaScript -->
+      <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+      </script>
+</body>
+</html>

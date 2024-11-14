@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Top bar -->
+      <div class="top-bar">
+        <div class="nav-links">
+        <a href="index.html">
+          <img src="images/triangle.svg" alt="Home Icon" class="arrow-icon" />
+          Antonia Pecha
+        </a>
+        <div class="search-bar">
+          <!-- <div class="search-placeholder">Search...</div> Placeholder for search bar -->
+        </div>
+          <a href="#about-me">About Me</a>
+          <a href="c_gallery.html">Coding Projects</a>
+          <a href="a_gallery.html">Art Projects</a>
+          <a href="#contact">Contact</a>
+          <a class="cv-button" href="cv.pdf" target="_blank">Download CV</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-area">
+        <div class="text-field">
+            <h1>My Portfolio</h1>
+            <h2 class="h2-blue">Web Development</h2>
+            <p>As an aspiring game developer, diving into this website project was one of the biggest challenges I set myself. 
+                My goal was to create a site that was not only functional, but also had a unique look and feel to showcase my web development skills. 
+                To be honest, my knowledge in this area was quite limited to begin with, but the journey has been an incredibly valuable learning experience.
+                <br>
+                <br>
+                The JavaScript files I've conjured up are perhaps best kept a secret, safely hidden where only the bravest of coders dare to venture.
+                Despite the occasional code-induced headache, the project has turned out quite well and has opened up many opportunities for improvement in both frontend development and graphic design. Overall, this endeavour has significantly improved my skills and given me new insights into these areas.</p>
+               
+        </div>
+
+
+        <div class="img-gallery-field">
+          <img src="images/Portfolio_Website/Screenshot 2024-11-08 123735.png" alt="Image 0" class="img-below">
+          <img src="images/Portfolio_Website/hihihaha.png" alt="Image 0" class="img-below">
+        </div>
+        <!-- Modal structure for displaying clicked image -->
+        
+    </div>
+    <!-- Footer placed inside the body tag -->
+    <footer>
+      <p>&copy; <span id="current-year"></span> | Antonia Pecha</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peak Rythm</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Top bar -->
+      <div class="top-bar">
+        <div class="nav-links">
+        <a href="index.html">
+          <img src="images/triangle.svg" alt="Home Icon" class="arrow-icon" />
+          Antonia Pecha
+        </a>
+        <div class="search-bar">
+          <!-- <div class="search-placeholder">Search...</div> Placeholder for search bar -->
+        </div>
+          <a href="#about-me">About Me</a>
+          <a href="c_gallery.html">Coding Projects</a>
+          <a href="a_gallery.html">Art Projects</a>
+          <a href="#contact">Contact</a>
+          <a class="cv-button" href="cv.pdf" target="_blank">Download CV</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-area">
+        <div class="text-field">
+            <h1>Peak Rythm</h1>
+            <h2 class="h2-red">Concept Art</h2>
+            <p>
+                Peak Rhythm is a VR rhythm climbing game where players climb on the back of a robot to the rhythm of the music. The goal is to get the robots as high as possible by grabbing different holds at the right time to move upwards. It's important to look where you're going, move quickly and keep the rhythm.            </p>
+            <div class="text-container">
+                <h2>Environmental Design</h2>
+                <p class="gradient-text">
+                    When I started working on Peak Rhythm, I was first tasked with coming up with concepts for the distant background, which consisted of a mountainous cenery with solar-punk futuristic buildings in front of it.
+                    This was meant to visualise a Vienna-inspired city of the future.
+                </p>
+                
+                <p id="more-text-1" style="display: none;">
+                    Because of the VR aspect, the buildings had to be highly detailed to avoid a lacklustre look. To combine my technical expertise with artistic creativity, I introduced data-efficient "building blocks" - 3D-modeled, intricately designed parts of buildings that are stackable and interchangeable. This approach creates the illusion of diverse, towering structures while minimising the impact on performance.
+                </p>
+                    <span class="read-more-btn" data-target="more-text-1">Read More</span>
+            
+                <h2>Character and Robot Design</h2>
+                <p class="gradient-text">
+                    In between working on concepts, I was asked to create a cover illustration. So I had to quickly come up with placeholder character and robot designs to be used in said illustration. 
+                         </p>
+                
+                <p id="more-text-2" style="display: none;">
+                    This led to me being entrusted with the final concepts of the character and robot, as well as being promoted to the position of Lead Concept Artist. As a result, I am now in charge of the creation of a definitive style guide that will be the reference point for all other artists.
+                </p>
+                <span class="read-more-btn" data-target="more-text-2">Read More</span>
+                <p>With a few interruptions, the project has now come full circle for me, back to the concepts of the environment. I'm currently working on the main building, which the players' robots will climb. However, this is still very much a work in progress.  </p>
+                </p>
+            </div>
+
+            </div>
+        
+        <div class="img-gallery-field">
+            <img src="images/Peak_Rythm/0.png" alt="Image 0" class="gallery-img" data-index="0">
+            <img src="images/Peak_Rythm/1.PNG" alt="Image 1" class="gallery-img" data-index="1">
+            <img src="images/Peak_Rythm/2.PNG" alt="Image 2" class="gallery-img" data-index="2">
+            <img src="images/Peak_Rythm/3.PNG" alt="Image 3" class="gallery-img" data-index="3">
+            <img src="images/Peak_Rythm/4.PNG" alt="Image 4" class="gallery-img" data-index="4">
+            <img src="images/Peak_Rythm/5.PNG" alt="Image 5" class="gallery-img" data-index="5">
+            <img src="images/Peak_Rythm/6.png" alt="Image 6" class="gallery-img" data-index="6">
+            <img src="images/Peak_Rythm/7.png" alt="Image 7" class="gallery-img" data-index="7">
+        </div>
+            <!-- Modal structure for displaying clicked image -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <!-- <div class="modal-caption" id="modal-caption"></div> -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+    </div>
+    <!-- Footer placed inside the body tag -->
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Antonia Pecha</p>
+      </footer>
+  
+      <!-- JavaScript -->
+      <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+      </script>
+</body>
+</html>
